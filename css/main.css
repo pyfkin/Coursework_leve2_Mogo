@@ -3,7 +3,7 @@ font-family: 'Kaushan Script', cursive;
 font-family: 'Roboto', sans-serif;*/
 
 header{
-	background-image: url(../pictures/header.jpg);
+	background-image: url(../img/header.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -39,10 +39,14 @@ header{
 	align-items: center;
 }
 
-.navbar-menu a{
+.menu a{
+	width: 24px;
+}
+
+.navbar-wrapper a{
 	font-size: 14px;
 	font-family: 'Montserrat', sans-serif;
-	color: rgb(252, 227, 138);
+	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	line-height: 1.2;
 	text-decoration: none;
@@ -51,10 +55,11 @@ header{
 
 .navbar-menu a:hover{
 	cursor: pointer;
+	color: rgb(252, 227, 138);
 	border-bottom: 3px solid #fce38a;
 }
 
-.header-text1{
+.head .header-text1{
 	display: block;
 	content: 'Creative Template';
 	width: 550px;
@@ -66,8 +71,7 @@ header{
 	text-align: center;
 }
 
-
-.header-text2{
+.head .header-text2{
 	display: block;
 	width: 810px;
 	margin: 33px auto 0;
@@ -80,7 +84,7 @@ header{
 	text-align: center;
 }
 
-.header-text2:after{
+.head .header-text2:after{
 	content: '';
 	display: block;
 	background: #fff;
@@ -95,14 +99,14 @@ header{
 	margin: 50px auto 0;
 	width: 160px;
 	height: 40px;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-  border: 3px solid #fff;
-  background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+	border: 3px solid #fff;
+	background-color: transparent;
 }
 
 .head button:hover{
@@ -110,12 +114,12 @@ header{
 	background-color: #edb75e;
 }
 
-.navigation-text{
-	margin: 157px -30px 0;
+.head .navigation-text{
+	margin: 157px -20px 0;
 	font-size: 0;
 }
 
-.navigation-text .col{
+.head .navigation-text .col{
 	display: inline-block;
 	box-sizing: border-box;
 	width: 280px;
@@ -123,36 +127,60 @@ header{
 	margin: 0 15px;
 }
 
-.navigation-text .col:hover{
+.head .navigation-text .col:hover{
 	cursor: pointer;
-
 }
 
-.nav-line{
+.head .nav-line{
+	position: relative;
 	width: 280px;
 	height: 3px;
 	background: #f7ebc5;
 	display: block;
-	/*margin: 40px auto 38px;*/
 }
 
-.navigation-text-theme{
+.head .col:hover .nav-line-hovered{
+	position: absolute;
+	width: 70px;
+	height: 3px;
+	background: #f38181;
+	display: block;
+}
+
+.head .col:hover ._2{
+	left: 70px;
+}
+
+.head .col:hover ._3{
+	left: 140px;
+}
+
+.head .col:hover ._4{
+	left: 210px;
+}
+
+.head .col:hover .nav-line{
+	background: #fff;
+}
+
+.head .navigation-text-theme{
 	padding-top: 20px;
 }
 
-.navigation-text span{
+.head .navigation-text span{
 	font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
 }
 
-.navigation-text p{
+.head .navigation-text p{
 	font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.2;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 1.2;
 }
+
