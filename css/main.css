@@ -15,6 +15,10 @@ header{
 	padding: 0 15px;
 }
 
+section .padding-box{
+	padding: 90px 0;
+}
+
 .menu .navbar-head-text{
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
@@ -184,7 +188,7 @@ header{
 	line-height: 1.2;
 }
 
-.about-us .header-text1{
+.header-text1{
 	margin-top: 92px;
 	font-size: 24px;
 	font-family: 'Kaushan Script', cursive;
@@ -193,7 +197,7 @@ header{
 	text-align: center;
 }
 
-.about-us .header-text2{
+.header-text2{
 	margin-top: 14px;
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
@@ -204,7 +208,7 @@ header{
 	text-align: center;
 }
 
-.about-us .header-text2:after{
+.header-text2:after{
 	content: '';
 	display: block;
 	background: #f38181;
@@ -225,14 +229,51 @@ header{
 
 .pict-facts .pict-row{
 	font-size: 0;
-	margin: 105px -15px;
+	margin: 100px -15px;
 }
+
+.pict-facts .pict-hover-text{
+	display: none;
+	padding: 10px 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+	order: 999;
+}
+
+.pf .pict-hover-text:before{
+	content: '';
+	display: none;
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	width: 35px;
+	height: 35px;
+	order: 999;background: url("../img/users.png") no-repeat ;
+}
+
+.pict-facts .pf:hover .pict-hover-text,
+.pict-facts .pf:hover .pict-hover-text:before{
+	display: block;
+}
+
+
 
 .pict-facts .pf{
 	position: relative;
+	background-color: #95e1d3;
 	display: inline-block;
 	box-sizing: border-box;
-	margin: 0 15px;
+	margin: 0 15px;/*kakashka*//*my gf about me*/
 	width: 380px;
 	height: 250px;
 }
@@ -249,4 +290,159 @@ header{
 	background: -webkit-linear-gradient(top, rgba(243,129,129,0.9) 0%,rgba(252,227,138,1) 100%); 
 	background: linear-gradient(to bottom, rgba(243,129,129,0.9) 0%,rgba(252,227,138,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f38181', endColorstr='#fce38a',GradientType=0 ); 
+
+	top: -10px;
+	left: -10px;
+}
+
+.pict-facts .pf:hover img{
+	position: absolute;
+	top: -10px;
+	left: -10px;
+}
+
+.number-facts{
+	font-size: 0;
+	margin-top: 110px;
+	background-color: #95e1d3;
+	height: 270px;
+}
+
+.number-facts .number-col{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 20%;
+	height: 270px;
+	padding-top: 70px;
+	border-right: 1px solid #b5eae0;
+	/*border-left: 1px solid #b5eae0;*/
+}
+
+.number-facts .number-col:first-of-type{
+	border-left: 1px solid #b5eae0;
+}
+
+
+.number-facts .number-text{
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.number-text:before{
+	display: block;
+	margin-bottom: 12px;
+	font-size: 72px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.number-facts .fact-1:before{
+	content: '42';
+}
+
+.number-facts .fact-2:before{
+	content: '123';
+}
+
+.number-facts .fact-3:before{
+	content: '15';
+}
+
+.number-facts .fact-4:before{
+	content: '99';
+}
+
+.number-facts .fact-5:before{
+	content: '24';
+}
+
+.services .header-text1{
+	padding-top: 16px;
+}
+
+.services-row-1{
+	font-size: 0;
+	margin-top: 65px;
+}
+
+.services-column{
+	display: inline-block;
+	box-sizing: border-box;;
+	width: 33.3%;
+	padding: 0 29px;
+}
+
+.services-pict{
+	display: inline-block;
+	width: 10%;
+}
+
+.services-text{
+	display: inline-block;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 0 0px 0 26px;
+}
+
+.services-text-head{
+	font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.services-text-paragraph{
+	padding-top: 10px;
+	font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.row-line{
+	display: block;
+    margin-top: 48px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+.services-row-2{
+	font-size: 0;
+	margin-top: 47px;
+}
+
+.u-design{
+	background-image: url(../img/u_des.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 120px;
+    padding-top: 16px;
+    height: 850px;
+}
+
+.devises{
+	position: relative;
+}
+
+.tablet{
+    position: absolute;
+    top: 8px;
+    left: 289px;
+}
+.smartphone{
+    position: absolute;
+    top: 243px;
+    right: 230px;
 }
