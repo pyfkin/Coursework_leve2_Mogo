@@ -464,17 +464,20 @@ section .padding-box{
 	text-align: center;
 }
 
-.tasks-do{
+.we-do .tasks-do{
 	font-size: 0;
 	padding-top: 76px;
 	padding-bottom: 105px;
 }
 
-.pict-do{
+.we-do .pict-do{
 	padding: 10px 0;
 }
 
-.description-do label{
+.we-do .description-do label{
+	display: inline-block;
+    padding-top: 9px;
+	padding-left: 15px;
 	font-size: 14px;
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(51, 51, 51);
@@ -483,37 +486,37 @@ section .padding-box{
 	cursor: pointer;
 }
 
-.tasks-do div{
+/*.img-checked,
+.img-unchecked{
+	display: none;
+    float: right;
+    padding: 10px 5px 0 0px;
+}*/
+
+.we-do .tasks-do div{
 	display: inline-block;
 	box-sizing: border-box;
 	width: 50%;
 }
 
-.description-do li{
+.we-do .description-do li{
 	margin: 10px 0;
 	border: 1px solid #e5e5e5;
 }
 
-.descr-header{
+.we-do .descr-header{
 	padding: 14px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.description-do .pre-icon{
-	/*padding: 15px;*/
-}
-
-.description-do li:not(:first-child) .descr-text{
-	/*display: none;*/
-}
-
-.description-do li div{
-	/*display: block;*/
+.we-do .description-do li .descr-header{
 	width: 100%;
 }
 
-.description-do textarea{
-	padding: 20px;
+.we-do .description-do textarea{
+	    margin-top: 15px;
+    margin-bottom: 27px;
+    padding: 0px 20px 0px 20px;
 	width: 535px;
 	max-height: 137px;
 	font-size: 15px;
@@ -527,64 +530,61 @@ section .padding-box{
 	overflow-y: scroll;
 }
 
-input{
-	visibility: hidden;
-}
-
-input:checked + div {
-    display: block !important;
-}
-
-div.descr-text{
-	display: none;
-}
-
-.descr-header input[type="radio"]:checked .descr-text{
-	/*display: none;*/
-}
-
-#radio2:checked ~ .descr-text{
-	/*display: none;*/
-}
-
-.scrolly::-webkit-scrollbar-track
+.we-do .scrolly::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
-	border-radius: 3px;
+	-webkit-box-shadow: inset 10px 0 0 rgb(245, 245, 245);
+	border-radius: 10px;
 	background-color: #f5f5f5;
 }
 
-.scrolly::-webkit-scrollbar
+.we-do .scrolly::-webkit-scrollbar
 {
 	width: 5px;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
-.scrolly::-webkit-scrollbar-thumb
+.we-do .scrolly::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
 	background-color: #95e1d3;
 }
 
+.we-do div.descr-text{
+	display: none;
+}
 
+.we-do .tasks-do  input{
+	display: none;
+}
 
+.we-do .tasks-do  input:checked + div {
+    display: block;
+}
 
+/*.we-do input:checked .img-uncheceked{
+	display: inline-block;
+}
 
+.we-do input:not(checked) .img-checeked{
+	display: none;
+}*/
 
+.descr-header .img-awwow{
+/*	display: inline-block;
+	background-image: url('../img/ARROW_UP.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 12px;
+	width: 22px;
+    padding: 17px 60px 0 0px;
+    float: right;*/
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.we-do .tasks-do  input:checked .descr-header .img-checked{
+	/*display: inline-block;*/
+	
+}
 
 
 
@@ -1010,9 +1010,9 @@ height: 160px;
 }
 
 .stories .blogs{
-	font-size: 0;
-	margin: 0 -18px;
-	margin-bottom: 115px;
+    font-size: 0;
+    margin: 0 -15px;
+    margin-bottom: 82px;
 }
 
 .stories .blog{
@@ -1153,7 +1153,7 @@ div.map-data{
 
 .map-data p{
 	font-size: 24px;
-  font-family: "Montserrat";
+  font-family:  'Montserrat', sans-serif;
   color: rgb(243, 129, 129);
   font-weight: bold;
   text-transform: uppercase;
@@ -1172,8 +1172,115 @@ div.map-data{
 	margin: 15px auto 0;
 }
 
-footer{
-	margin-top: 500px;
+.summary + .container{
+	margin-top: 75px;
+	font-size: 0;
+}
+
+section.summary{
+margin-bottom: 25px;
+}
+
+.summary. .blogs-mogo{
+    margin-right: 56px;
+}
+
+.summary .sum-columns{
+	display: inline-block;
+}
+
+.summary .follow-mogo{
+	width: 507px;
+	height: 360px;
+}
+
+.summary .blogs-mogo-title{
+	    margin-bottom: 39px;
+font-size: 14px;
+  font-family:  'Montserrat', sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.summary .blogs-mogo{
+	    margin-right: 55px;
+}
+
+.blogs .blog-pict,
+.blogs .blog-info{
+	display: inline-block;
+}
+
+.blogs .blog{
+	padding-bottom: 30px;
+}
+
+.blogs .blog-pict{
+	margin-right: 15px;
+}
+
+.blogs .blog-info{
+	width: 220px;
+	height: 55px;
+}
+
+.blogs .blog-theme{
+	padding-top: 17px;
+font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.blogs .blog-date{
+	  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.846;
+  text-align: left;
+}
+
+.insta-mogo p{
+		    margin-bottom: 39px;
+	font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.insta-mogo .insta-foto-row{
+	font-size: 0;
+	margin: 0 -2px;
+}
+
+.insta-mogo .insta-foto{
+	margin-bottom: 16px;
+}
+
+.insta-mogo .insta-foto-row img{
+	width: 33.3%;
+	box-sizing: border-box;
+	padding-left: 2px;
+	padding-bottom: 2px;
+}
+
+.insta-mogo .inst-view-foto{
+	  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(51, 51, 51);
+  font-style: italic;
+  line-height: 1.846;
+  text-align: left;
 }
 
 .about:before{
@@ -1185,9 +1292,9 @@ footer{
 }
 
 .about p{
-	padding: 25px 0;
+	 padding: 25px 0;
 	font-size: 14px;
-  font-family: "Montserrat";
+  font-family:  'Montserrat', sans-serif;
   color: rgb(51, 51, 51);
   line-height: 1.2;
   text-align: center;
