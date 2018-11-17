@@ -1178,8 +1178,110 @@ div.map-data{
 }
 
 section.summary{
-margin-bottom: 25px;
+	margin-bottom: 25px;
 }
+
+.summary .follow-head{
+	font-size: 46px;
+  font-family:  'Montserrat', sans-serif;
+  color: rgb(204, 204, 204);
+  font-weight: bold;
+  line-height: 0.7;
+  margin-bottom: 37px;
+}
+
+
+.summary .follow-text{
+	padding-right: 35px;
+	margin-bottom: 45px;
+	font-size: 15px;
+  font-family:  'Roboto', sans-serif;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: left;
+
+}
+
+.summary .number-of-followers:before{
+	content: '15k';
+	font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-right: 4px;
+}
+
+.summary .number-of-followers{
+	margin-bottom: 13px;
+	font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.summary .follow-line{
+    display: block;
+    margin-bottom: 14px;
+    width: 480px;
+    height: 1px;
+    background: #e5e5e5;
+}
+
+.summary .follow-us .follow-icon-text{
+	display: inline-block;
+	font-size: 15px;
+  font-family:  'Roboto', sans-serif;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.summary .follow-nets {
+	display: inline-block;
+	margin-bottom: 38px;
+}
+
+ svg{
+ 	margin-left: 11px;
+ }
+
+.email-form .email{
+padding-left: 13px;
+    width: 214px;
+    height: 35px;
+    border: 1px solid #e7e7e7;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+
+
+
+.email-form .email-button{
+	margin: 0px -4px;
+	width: 150px;
+	height: 40px;
+	font-size: 14px;
+	background-color: #95e1d3;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+}
+
 
 .summary. .blogs-mogo{
     margin-right: 56px;
@@ -1283,7 +1385,7 @@ font-size: 12px;
   text-align: left;
 }
 
-.about:before{
+footer .about:before{
 	content: '';
 	display: block;
 	width: 100%;
@@ -1291,7 +1393,7 @@ font-size: 12px;
 	background: #e5e5e5;
 }
 
-.about p{
+footer .about p{
 	 padding: 25px 0;
 	font-size: 14px;
   font-family:  'Montserrat', sans-serif;
@@ -1300,7 +1402,7 @@ font-size: 12px;
   text-align: center;
 }
 
-.about span{
+footer .about span{
 	color: #f38181;
 }
 
