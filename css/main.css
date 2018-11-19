@@ -16,6 +16,7 @@ header{
 }
 
 .centerer{
+
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -25,6 +26,14 @@ header{
 section .padding-box{
 	padding: 90px 0;
 }
+
+section > h3,
+article > h3{
+	display: none;
+	/*visibility: hidden;*/
+}
+
+
 
 .menu .navbar-head-text{
 	font-size: 30px;
@@ -474,10 +483,25 @@ section .padding-box{
 	padding: 10px 0;
 }
 
+.we-do .tasks-do .pict-do,
+.we-do .tasks-do .description-do{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.we-do .tasks-do input{
+	display: none;
+}
+
+.we-do input:checked ~ .descr-text {
+    display: block;
+}
+
 .we-do .description-do label{
 	display: inline-block;
-    padding-top: 9px;
-	padding-left: 15px;
+	font-weight: bold;
+	width: 100%;
 	font-size: 14px;
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(51, 51, 51);
@@ -486,18 +510,22 @@ section .padding-box{
 	cursor: pointer;
 }
 
-/*.img-checked,
-.img-unchecked{
-	display: none;
-    float: right;
-    padding: 10px 5px 0 0px;
-}*/
-
-.we-do .tasks-do div{
-	display: inline-block;
-	box-sizing: border-box;
-	width: 50%;
+.descr-header .pre-icon{
+	margin-right: 13px;
 }
+
+.descr-header span{
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.we-do .img-checked,
+.we-do .img-unchecked{
+	float: right;
+	display: none;
+    padding: 10px 30px 0 0px;
+}
+
 
 .we-do .description-do li{
 	margin: 10px 0;
@@ -506,15 +534,24 @@ section .padding-box{
 
 .we-do .descr-header{
 	padding: 14px;
-	border-bottom: 1px solid #e5e5e5;
-}
-
-.we-do .description-do li .descr-header{
 	width: 100%;
 }
 
+.we-do div.descr-text{
+	border-top: 1px solid #e5e5e5;
+	display: none;
+}
+
+.we-do  input:checked + .descr-header img.img-unchecked{
+	display: inline-block;
+}
+
+.we-do  input:not(:checked) + .descr-header img.img-checked{
+	display: inline-block;
+}
+
 .we-do .description-do textarea{
-	    margin-top: 15px;
+	  margin-top: 15px;
     margin-bottom: 27px;
     padding: 0px 20px 0px 20px;
 	width: 535px;
@@ -548,42 +585,6 @@ section .padding-box{
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
 	background-color: #95e1d3;
-}
-
-.we-do div.descr-text{
-	display: none;
-}
-
-.we-do .tasks-do  input{
-	display: none;
-}
-
-.we-do .tasks-do  input:checked + div {
-    display: block;
-}
-
-/*.we-do input:checked .img-uncheceked{
-	display: inline-block;
-}
-
-.we-do input:not(checked) .img-checeked{
-	display: none;
-}*/
-
-.descr-header .img-awwow{
-/*	display: inline-block;
-	background-image: url('../img/ARROW_UP.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 12px;
-	width: 22px;
-    padding: 17px 60px 0 0px;
-    float: right;*/
-}
-
-.we-do .tasks-do  input:checked .descr-header .img-checked{
-	/*display: inline-block;*/
-	
 }
 
 
@@ -1242,10 +1243,19 @@ section.summary{
 
 .summary .follow-nets {
 	display: inline-block;
+	padding-top: 5px;
 	margin-bottom: 38px;
 }
 
+.follow-nets img{
+ 	width: 15px;
+ 	height: 15px;
+ 	cursor: pointer;
+ 	margin-left: 11px;
+ }
+
  svg{
+ 	cursor: pointer;
  	margin-left: 11px;
  }
 
@@ -1262,10 +1272,6 @@ padding-left: 13px;
     line-height: 1.6;
     text-align: left;
 }
-
-
-
-
 
 .email-form .email-button{
 	margin: 0px -4px;
@@ -1376,7 +1382,13 @@ font-size: 12px;
 	padding-bottom: 2px;
 }
 
+
 .insta-mogo .inst-view-foto{
+	text-decoration: none;
+}
+
+.insta-mogo .inst-view-foto p{
+
 	  font-size: 10px;
   font-family: 'Roboto', sans-serif;
   color: rgb(51, 51, 51);
@@ -1392,6 +1404,7 @@ footer .about:before{
 	height: 1px;
 	background: #e5e5e5;
 }
+
 
 footer .about p{
 	 padding: 25px 0;
